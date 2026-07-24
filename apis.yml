@@ -1,7 +1,14 @@
 aid: clivi
 name: Clivi
-description: Clivi is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Clivi is Mexico's largest digital clinic for diabetes and obesity care,
+  delivering fully online telehealth treatment that combines endocrinologists, internists,
+  nutritionists, and psychologists with continuous glucose monitoring and GLP-1 medications
+  (Ozempic, Wegovy, Mounjaro, Saxenda, Rybelsus). Founded in 2020 and based in Mexico
+  City, Clivi serves patients nationwide through WhatsApp-based virtual care, home
+  medication delivery via its Farmacia Clivi digital pharmacy, and tiered treatment
+  plans (Clivi Pro, Plus, Total, and Zero). Backed by 500 Global and other investors,
+  Clivi operates as a consumer healthtech service; it publishes no public developer
+  API, but does expose an llms.txt content index for AI agents.
 url: https://raw.githubusercontent.com/api-evangelist/clivi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,32 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.clivi.com.mx/clivi_tratamiento_obesidad.webp
 tags:
 - Company
+- Health
+- Healthcare
+- Telemedicine
+- Digital Health
+- Diabetes
+- Obesity
+- GLP-1
+- Telehealth
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +50,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://clivi.com.mx
+  url: https://www.clivi.com.mx
+- type: Blog
+  url: https://blog.clivi.com.mx
+- type: Pricing
+  url: https://www.clivi.com.mx/planes
+- type: SignUp
+  url: https://join.clivi.com.mx
+- type: TermsOfService
+  url: https://www.clivi.com.mx/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.clivi.com.mx/aviso-de-privacidad
+- type: LLMsTxt
+  url: llms/clivi-llms.txt
+- type: DomainSecurity
+  url: security/clivi-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
